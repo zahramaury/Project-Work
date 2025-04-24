@@ -9,58 +9,78 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=LT+Soul:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            background-color: #1a1a1a;
-            font-family: 'LT Soul', sans-serif;
+        :root {
+            --primary-color: #71482F;
+            --secondary-color: #f5e6d3;
+            --text-dark: #1a1a1a;
+            --text-light: #ffffff;
         }
+
+        body, html {
+            background-color: var(--text-dark);
+            font-family: serif;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'LT Soul', sans-serif;
+            font-family: serif;
         }
 
         .font-serif {
-            font-family: 'LT Soul', serif !important;
+            font-family: serif !important;
         }
 
         .font-bold {
             font-weight: 700 !important;
         }
-        .font-normal {
-        }
 
+        /* Hero Section */
         .hero-section {
-            background:url('img/background.jpg') no-repeat center center;
+            background: url('img/background.jpg') no-repeat center center;
             background-size: cover;
             min-height: 100vh;
             display: flex;
             align-items: center;
         }
 
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            overflow-x: hidden;
-        }
-
-
+        /* Service Section */
         .service-section {
-            background:url('img/Banner.png') no-repeat center center;
+            background: url('img/Banner.png') no-repeat center center;
             background-size: cover;
             min-height: 30vh;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100vw;
+            margin: 0;
+            padding: 20px;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            transform: translateX(-50%);
         }
 
+        .max-w-3xl {
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: left;
+        }
 
+        /* Main Content */
         .main-content {
-            background-color: #f5e6d3;
+            background-color: var(--secondary-color);
             margin-top: -40px;
             position: relative;
             padding: 2rem;
         }
 
+        /* Brown Rectangle */
         .brown-rectangle {
-            background-color: #71482F;
+            background-color: var(--primary-color);
             width: 85%;
             height: 80px;
             border-radius: 15px;
@@ -68,7 +88,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: var(--text-light);
             text-align: center;
             font-size: 1.3rem;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -76,28 +96,43 @@
             z-index: 10;
         }
 
+        /* Story Section */
         .story-section {
             margin-top: 50px;
         }
 
+        .story-section h2,
+        .story-section p,
+        .brown-section h2,
+        .product-section {
+            color: var(--primary-color);
+        }
+
+        /* Brown Section */
         .brown-section {
-            background-color: #f5e6d3;
+            background-color: var(--secondary-color);
             border-radius: 20px;
             padding: 2rem;
             margin: 2rem auto;
-            color: white;
+            color: var(--text-light);
         }
 
-        .testimonial-card {
-            background-color: #754c29; /* Warna coklat */
+        /* White Section */
+        .white-section {
+            background-color: white;
             border-radius: 20px;
-            padding: 1.5rem;
-            color: white;
-            text-align: left;
+            padding: 2rem;
+            margin: 2rem auto;
         }
 
-        html {
-            scroll-behavior: smooth;
+        /* Testimonial Card */
+        .testimonial-card {
+            background-color: var(--primary-color);
+            border-radius: 15px;
+            padding: 1.5rem;
+            color: var(--text-light);
+            text-align: left;
+            margin: 1rem;
         }
 
         .testimonial-header {
@@ -108,58 +143,58 @@
         }
 
         .user-icon {
-            width: 50px; /* Ukuran ikon */
+            width: 50px;
             height: 50px;
             border-radius: 50%;
-            background-color: transparent; /* Hapus background putih */
-            color: white; /* Warna ikon */
+            background-color: transparent;
+            color: var(--text-light);
         }
 
-        .testimonial-header {
-            display: flex;
-            align-items: center;
-            gap: 10px; /* Jarak antara ikon dan teks */
-        }
-
+        /* Contact Section */
         .contact-section {
-            background-color: #71482F;
+            background-color: var(--primary-color);
             border-radius: 20px;
             padding: 2rem;
             margin: 2rem auto;
-            color: white;
+            color: var(--text-light);
+            text-align: center;
         }
 
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
+        /* Product Grid */
         .product-card {
-            background: #8B5E3B;
+            background-color: var(--secondary-color) !important;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-            }
+        }
 
         .product-card:hover {
             transform: translateY(-5px);
         }
 
         .product-image {
-            width: 219px;
-            height: 273px;
+            width: 100%;
+            height: auto;
             object-fit: cover;
         }
 
+        /* Navigation */
         .nav-logo {
             height: 40px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-logo-white {
+            filter: brightness(0) invert(1);
+        }
+
+        .nav-logo-dark {
+            filter: none;
         }
 
         .nav-link {
-            color: white;
+            color: var(--text-light);
             font-size: 14px;
             padding: 0.5rem 1rem;
             transition: opacity 0.3s ease;
@@ -169,31 +204,26 @@
             opacity: 0.8;
         }
 
+        .nav-link-white {
+            color: var(--text-light) !important;
+        }
+
+        .nav-link-dark {
+            color: #333 !important;
+        }
+
+        /* Buttons */
         .contact-btn {
-            background-color: white;
+            background-color: var(--text-light);
             color: black;
             padding: 8px 24px;
             border-radius: 20px;
             font-weight: 500;
         }
 
-        .testimonial-card {
-            background-color: #71482F;
-            border-radius: 15px;
-            padding: 1.5rem;
-            margin: 1rem;
-        }
-
-        .white-section {
-            background-color: white;
-            border-radius: 20px;
-            padding: 2rem;
-            margin: 2rem auto;
-        }
-
         .instagram-btn {
-            background-color: #71482F;
-            color: white;
+            background-color: var(--primary-color);
+            color: var(--text-light);
             padding: 10px 30px;
             border-radius: 25px;
             font-size: 16px;
@@ -201,45 +231,80 @@
             display: inline-block;
         }
 
-        .story-section h2,
-        .story-section p {
-            color: #71482F;
-        }
-        .brown-section h2 {
-            color: #71482F;
-        }
-        .product-section{
-            color: #71482F;
+        .admin-btn {
+            background-color: var(--primary-color) !important;
+            color: var(--text-light);
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
         }
 
+        .admin-btn:hover {
+            opacity: 0.9;
+        }
 
+        .order-btn {
+            background-color: var(--text-light);
+            color: black;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        /* Navbar Styles */
+        .navbar-transparent {
+            background-color: transparent !important;
+            box-shadow: none !important;
+        }
+
+        .navbar-solid {
+            background-color: rgba(55, 65, 81, 0.75) !important;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-solid .nav-link {
+            color: var(--text-light) !important;
+        }
+
+        .navbar-solid .contact-btn {
+            background-color: var(--primary-color) !important;
+            color: var(--text-light) !important;
+        }
+
+        /* Footer */
         footer {
-            background-color: #71482F;
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem 0;
         }
-
     </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-gray-800 bg-opacity-75 py-4">
+    <nav class="fixed w-full z-50 py-4 navbar-transparent">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <!-- Logo on the left -->
-            <img src="img/logo.png" alt="PaskoNayor" class="nav-logo h-10">
+            <img src="img/logo.png" alt="PaskoNayor" class="nav-logo nav-logo-white h-10">
 
             <!-- Centered navigation links -->
             <div class="hidden md:flex items-center justify-center flex-grow space-x-6">
-                <a href="#" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#product" class="nav-link">Product</a>
-                <a href="#service" class="nav-link">Service</a>
-                <a href="#testimoni" class="nav-link">Testimoni</a>
+                <a href="#" class="nav-link nav-link-white">Home</a>
+                <a href="#about" class="nav-link nav-link-white">About</a>
+                <a href="#product" class="nav-link nav-link-white">Product</a>
+                <a href="#service" class="nav-link nav-link-white">Service</a>
+                <a href="#testimoni" class="nav-link nav-link-white">Testimoni</a>
             </div>
             <!-- Contact button on the right -->
             <button class="contact-btn">Contact Me</button>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden">
+        <div id="mobile-menu" class="md:hidden hidden">
             <div class="flex flex-col items-center space-y-2 bg-gray-800 py-4">
                 <a href="#" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
@@ -256,7 +321,7 @@
         <div class="container mx-auto px-6">
             <h1 class="text-white text-5xl font-bold mb-4">Welcome!</h1>
             <img src="img/paskonayor.png" alt="PaskoNayor" class="text-white text-7xl font-serif mb-2">
-            <button class="bg-white text-black px-8 py-3 rounded-full font-medium">Order Now!</button>
+            <a href="https://whatsform.com/kkqq3g" target="_blank" class="order-btn">Order Now!</a>
         </div>
     </section>
 
@@ -282,22 +347,22 @@
         <div class="max-w-6xl mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-8">Our Special Product</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="rounded-lg shadow-md overflow-hidden p-4 text-center" style="background-color: #f5e6d3 !important;">
+                <div class="product-card p-4 text-center">
                     <img src="/img/coffe.png" alt="Coffee Beans" class="w-full h-auto object-cover">
                     <h3 class="text-xl font-semibold">Coffee Beans</h3>
                     <p class="text-brown">Penjelasan dari Coffee Beans Tersedia.</p>
                 </div>
-                <div class="rounded-lg shadow-md overflow-hidden p-4 text-center" style="background-color: #f5e6d3 !important;">
+                <div class="product-card p-4 text-center">
                     <img src="/img/coffe.png" alt="Coffee Bubuk" class="w-full h-auto object-cover">
                     <h3 class="text-xl font-semibold">Coffee Bubuk</h3>
                     <p class="text-brown">Penjelasan dari Coffee Bubuk Tersedia.</p>
                 </div>
-                <div class="rounded-lg shadow-md overflow-hidden p-4 text-center" style="background-color: #f5e6d3 !important;">
+                <div class="product-card p-4 text-center">
                     <img src="/img/coffe.png" alt="Coffee Tubruk" class="w-full h-auto object-cover">
                     <h3 class="text-xl font-semibold">Coffee Tubruk</h3>
                     <p class="text-brown">Penjelasan dari Coffee Tubruk Tersedia.</p>
                 </div>
-                <div class="rounded-lg shadow-md overflow-hidden p-4 text-center" style="background-color: #f5e6d3 !important;">
+                <div class="product-card p-4 text-center">
                     <img src="/img/coffe.png" alt="Coffee Drink" class="w-full h-auto object-cover">
                     <h3 class="text-xl font-semibold">Coffee Drink</h3>
                     <p class="text-brown">Penjelasan dari Coffee Drink Tersedia.</p>
@@ -306,44 +371,42 @@
 
             <h2 class="text-3xl font-bold mt-10 mb-8">Other Product</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="rounded-lg shadow-md overflow-hidden p-4 text-center" style="background-color: #f5e6d3 !important;">
+                <div class="product-card p-4 text-center">
                     <img src="/img/coffe.png" alt="Sugar for Coffee" class="w-full h-auto object-cover">
                     <h3 class="text-xl font-semibold">Sugar for Coffee</h3>
                     <p class="text-brown">Penjelasan dari Sugar Tersedia.</p>
                 </div>
-                <div class="rounded-lg shadow-md overflow-hidden p-4 text-center" style="background-color: #f5e6d3 !important;">
+                <div class="product-card p-4 text-center">
                     <img src="/img/coffe.png" alt="Syrup for Coffee" class="w-full h-auto object-cover">
                     <h3 class="text-xl font-semibold">Syrup for Coffee</h3>
                     <p class="text-brown">Penjelasan dari Syrup Tersedia.</p>
                 </div>
-                <div class="rounded-lg shadow-md overflow-hidden p-4 text-center" style="background-color: #f5e6d3 !important;">
+                <div class="product-card p-4 text-center">
                     <img src="/img/coffe.png" alt="Cookies Coffee" class="w-full h-auto object-cover">
                     <h3 class="text-xl font-semibold">Cookies Coffee</h3>
                     <p class="text-brown">Penjelasan dari Cookies Tersedia.</p>
                 </div>
-                <div class="rounded-lg shadow-md overflow-hidden p-4 text-center" style="background-color: #f5e6d3 !important;">
+                <div class="product-card p-4 text-center">
                     <img src="/img/coffe.png" alt="Merchandise Coffee" class="w-full h-auto object-cover">
                     <h3 class="text-xl font-semibold">Merchandise Coffee</h3>
                     <p class="text-brown">Penjelasan dari Merchandise Tersedia.</p>
                 </div>
             </div>
             <div class="mt-8">
-                <button class=" text-white px-6 py-2 rounded-full font-semibold  shadow-md hover:bg-gray-200 transition duration-300" style="background-color: #71482F !important;">
-                    Chat Admin!
-                </button>
+                <a href="https://whatsform.com/kkqq3g" target="_blank" class="admin-btn">Chat Admin!</a>
             </div>
         </div>
     </section>
 
-    {{-- service --}}
+    <!-- service -->
     <section id="service" class="service-section">
         <div class="max-w-3xl">
             <h5 class="text-white text-4xl font-serif mb-6 leading-snug">
                 Find Out The Details of PaskoNayor Products And Enjoy Our Private Coffee Service!
             </h5>
-            <button class="bg-white text-brown-600 px-6 py-2 rounded-full font-semibold shadow-md hover:bg-gray-200 transition duration-300">
+            <a href="https://whatsform.com/kkqq3g" target="_blank" class="bg-white text-brown-600 px-6 py-2 rounded-full font-semibold shadow-md hover:bg-gray-200 transition duration-300 inline-block">
                 Chat Admin!
-            </button>
+            </a>
         </div>
     </section>
 
@@ -352,49 +415,66 @@
             <span class="block">Come & Join</span>
             <span class="block">Our Happy Customers</span>
         </h2>
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="testimonial-card">
                 <div class="testimonial-header">
-                    <x-heroicon-s-user-circle class="w-10 h-10" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+                </svg>
                     <div>
                         <h3 class="font-bold mb-1">Rizky Dwi Sukmana</h3>
                         <p class="customer-label">Customer</p>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-header">
-                     <x-heroicon-s-user-circle class="w-10 h-10" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+                </svg>
                     <div>
                         <h3 class="font-bold mb-1">Rizky Dwi Sukmana</h3>
                         <p class="customer-label">Customer</p>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-header">
-                    <x-heroicon-s-user-circle class="w-10 h-10" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+                </svg>
                     <div>
                         <h3 class="font-bold mb-1">Rizky Dwi Sukmana</h3>
                         <p class="customer-label">Customer</p>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
             </div>
         </div>
     </section>
 
-
-       <!-- Contact CTA -->
-        <section class="contact-section text-center">
-            <h2 class="text-2xl font-bold mb-4 ">Contact Us for Exciting Promotions!</h2>
-            <p class="text-white mb-4">Start & Conditions Apply in Accordance with The Promotion Period!</p>
-            <button class="bg-white text-black px-6 py-2 rounded-full font-semibold shadow-md hover:bg-gray-200 transition duration-300">
-                Chat Admin!
-            </button>
-        </section>
+    <!-- Contact CTA -->
+    <section class="contact-section">
+        <h2 class="text-2xl font-bold mb-4">Contact Us for Exciting Promotions!</h2>
+        <p class="text-white mb-4">Start & Conditions Apply in Accordance with The Promotion Period!</p>
+        <a href="https://whatsform.com/kkqq3g" target="_blank" class="bg-white text-black px-6 py-2 rounded-full font-semibold shadow-md hover:bg-gray-200 transition duration-300 inline-block">
+            Chat Admin!
+        </a>
+    </section>
     </main>
 
     <footer class="text-white py-8 text-center">
@@ -402,12 +482,43 @@
     </footer>
 
     <script>
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('nav');
+            const logo = document.querySelector('.nav-logo');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const heroSection = document.querySelector('.hero-section');
+            const heroHeight = heroSection.offsetHeight;
+            
+            if (window.scrollY > heroHeight * 0.8) {
+                navbar.classList.remove('navbar-transparent');
+                navbar.classList.add('navbar-solid');
+                logo.classList.remove('nav-logo-white');
+                logo.classList.add('nav-logo-dark');
+                navLinks.forEach(link => {
+                    link.classList.remove('nav-link-white');
+                    link.classList.add('nav-link-dark');
+                });
+            } else {
+                navbar.classList.remove('navbar-solid');
+                navbar.classList.add('navbar-transparent');
+                logo.classList.remove('nav-logo-dark');
+                logo.classList.add('nav-logo-white');
+                navLinks.forEach(link => {
+                    link.classList.remove('nav-link-dark');
+                    link.classList.add('nav-link-white');
+                });
+            }
+        });
 
-    mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-</script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
 </body>
 </html>
