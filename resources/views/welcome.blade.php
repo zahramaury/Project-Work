@@ -355,7 +355,7 @@
             <p class="text-gray-700 leading-relaxed mb-6">
                 With the concept of storytelling coffee, we believe that every coffee bean has its own story. We not only deliver delicious coffee, but also share the stories and insights behind each cup served.
             </p>
-            <a href="https://www.instagram.com/kopipaskonayor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+            <a href="https://www.instagram.com/kedaipasko?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
             target="_blank"
             class="instagram-btn hover:opacity-90 inline-block text-white bg-[#6B4226] px-4 py-2 rounded-lg">
             Our Instagram
@@ -380,7 +380,7 @@
                             <img src="/img/coffe.png" alt="Coffee Beans" class="w-full h-48 object-cover rounded-lg">
                             <h3 class="text-xl font-semibold mt-4">Coffee Beans</h3>
                             <p class="mt-2">Detail lengkap Coffee Beans di sini.</p>
-                            <a href="https://www.instagram.com/kopipaskonayor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-btn hidden">Go to Instagram</a>
+                            <a href="https://www.instagram.com/kedaipasko?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-btn hidden">Go to Instagram</a>
                             <hr>
                             <button onclick="closeModal('modal-1')" class="mt-4 text-gray-500">Close</button>
                         </div>
@@ -398,7 +398,7 @@
                             <img src="/img/coffe.png" alt="Coffee Bubuk" class="w-full h-48 object-cover rounded-lg">
                             <h3 class="text-xl font-semibold mt-4">Coffee Bubuk</h3>
                             <p class="mt-2">Detail lengkap Coffee Bubuk di sini.</p>
-                            <a href="https://www.instagram.com/kopipaskonayor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-btn hidden">Go to Instagram</a>
+                            <a href="https://www.instagram.com/kedaipasko?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-btn hidden">Go to Instagram</a>
                             <hr>
                             <button onclick="closeModal('modal-2')" class="mt-4 text-gray-500">Close</button>
                         </div>
@@ -416,7 +416,7 @@
                             <img src="/img/coffe.png" alt="Coffee Tubruk" class="w-full h-48 object-cover rounded-lg">
                             <h3 class="text-xl font-semibold mt-4">Coffee Tubruk</h3>
                             <p class="mt-2">Detail lengkap Coffee Tubruk di sini.</p>
-                            <a href="https://www.instagram.com/kopipaskonayor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-btn hidden">Go to Instagram</a>
+                            <a href="https://www.instagram.com/kedaipasko?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-btn hidden">Go to Instagram</a>
                             <hr>
                             <button onclick="closeModal('modal-3')" class="mt-4 text-gray-500">Close</button>
                         </div>
@@ -434,7 +434,7 @@
                             <img src="/img/coffe.png" alt="Coffee Drink" class="w-full h-48 object-cover rounded-lg">
                             <h3 class="text-xl font-semibold mt-4">Coffee Drink</h3>
                             <p class="mt-2">Detail lengkap Coffee Drink di sini.</p>
-                            <a href="https://www.instagram.com/kopipaskonayor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-btn hidden">Go to Instagram</a>
+                            <a href="https://www.instagram.com/kedaipasko?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-btn hidden">Go to Instagram</a>
                             <hr>
                             <button onclick="closeModal('modal-4')" class="mt-4 text-gray-500">Close</button>
                         </div>
@@ -455,7 +455,7 @@
                             <img src="/img/coffe.png" alt="Sugar for Coffee" class="w-full h-48 object-cover rounded-lg">
                             <h3 class="text-xl font-semibold mt-4">Sugar for Coffee</h3>
                             <p class="mt-2">Detail lengkap Sugar for Coffee di sini.</p>
-                            <a href="https://www.instagram.com/kopipaskonayor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-button hidden">Go to Instagram</a>
+                            <a href="https://www.instagram.com/kedaipasko?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-button hidden">Go to Instagram</a>
                             <hr>
                             <button onclick="closeModal('modal-5')" class="mt-4 text-gray-500">Close</button>
                         </div>
@@ -473,7 +473,7 @@
                             <img src="/img/coffe.png" alt="Syrup for Coffee" class="w-full h-48 object-cover rounded-lg">
                             <h3 class="text-xl font-semibold mt-4">Syrup for Coffee</h3>
                             <p class="mt-2">Detail lengkap Syrup for Coffee di sini.</p>
-                            <a href="https://www.instagram.com/kopipaskonayor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-button hidden">Go to Instagram</a>
+                            <a href="https://www.instagram.com/kedaipasko?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-button hidden">Go to Instagram</a>
                             <hr>
                             <button onclick="closeModal('modal-6')" class="mt-4 text-gray-500">Close</button>
                         </div>
@@ -491,7 +491,7 @@
                             <img src="/img/coffe.png" alt="Cookies Coffee" class="w-full h-48 object-cover rounded-lg">
                             <h3 class="text-xl font-semibold mt-4">Cookies Coffee</h3>
                             <p class="mt-2">Detail lengkap Cookies Coffee di sini.</p>
-                            <a href="https://www.instagram.com/kopipaskonayor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-button hidden">Go to Instagram</a>
+                            <a href="https://www.instagram.com/kedaipasko?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-button hidden">Go to Instagram</a>
                             <hr>
                             <button onclick="closeModal('modal-7')" class="mt-4 text-gray-500">Close</button>
                         </div>
@@ -509,7 +509,7 @@
                             <img src="/img/coffe.png" alt="Merchandise Coffee" class="w-full h-48 object-cover rounded-lg">
                             <h3 class="text-xl font-semibold mt-4">Merchandise Coffee</h3>
                             <p class="mt-2">Detail lengkap Merchandise Coffee di sini.</p>
-                            <a href="https://www.instagram.com/kopipaskonayor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-button hidden">Go to Instagram</a>
+                            <a href="https://www.instagram.com/kedaipasko?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-button hidden">Go to Instagram</a>
                             <hr>
                             <button onclick="closeModal('modal-8')" class="mt-4 text-gray-500">Close</button>
                         </div>
